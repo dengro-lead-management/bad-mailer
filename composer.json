@@ -1,0 +1,18 @@
+{
+    "name": "dengro-lead-management/bad-mailer",
+    "description": "A transport driver for Laravel's Mailer that always returns an error, intended for testing",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Davidson",
+            "email": "dan@rallyagency.co.uk"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DengroLeadManagement\\BadMailer\\": "src"
+        }
+    }
+}
