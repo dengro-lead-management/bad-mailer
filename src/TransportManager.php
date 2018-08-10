@@ -1,6 +1,6 @@
 <?php
 
-namespace DengroLeadManagement\BadMailer;
+namespace DenGroLeadManagement\BadMailer;
 
 use DengroLeadManagement\BadMailer\Transport\BadMailerTransport;
 

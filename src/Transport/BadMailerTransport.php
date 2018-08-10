@@ -1,6 +1,6 @@
 <?php
 
-namespace DengroLeadManagement\BadMailer\Transport;
+namespace DenGroLeadManagement\BadMailer\Transport;
 
 use GuzzleHttp\ClientInterface;
 use Illuminate\Mail\Transport\Transport;

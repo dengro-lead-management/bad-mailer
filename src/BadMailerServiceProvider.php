@@ -1,6 +1,6 @@
 <?php 
 
-namespace DengroLeadManagement\BadMailer;
+namespace DenGroLeadManagement\BadMailer;
 
 class BadMailerServiceProvider extends \Illuminate\Mail\MailServiceProvider
 {
@@ -9,10 +9,10 @@ class BadMailerServiceProvider extends \Illuminate\Mail\MailServiceProvider
      *
      * @return void
      */
-    // public function boot()
-    // {
+    public function boot()
+    {
 
-    // }
+    }
 
     /**
      * Register the application services.

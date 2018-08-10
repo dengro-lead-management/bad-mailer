@@ -1,6 +1,6 @@
 <?php
 
-namespace DengroLeadManagement\BadMailer;
+namespace DenGroLeadManagement\BadMailer;
 
 use Illuminate\Support\Facades\Facade;
 
