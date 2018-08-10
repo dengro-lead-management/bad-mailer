@@ -5,34 +5,23 @@ namespace DenGroLeadManagement\BadMailer;
 class BadMailerServiceProvider extends \Illuminate\Mail\MailServiceProvider
 {
     /**
-     * Bootstrap the application services.
+     * Perform post-registration booting of services.
      *
      * @return void
      */
     public function boot()
     {
-
+        if ($this->app['config']['mail.driver'] != 'badmailer') {
+            return;
+        }
     }
-
     /**
-     * Register the application services.
+     * Register any package services.
      *
      * @return void
      */
     public function register()
     {
-        $this->app->singleton(BadMailer::class, function () {
-            return new BadMailer();
-        });
-
-        $this->app->alias(BadMailer::class, 'bad-mailer');
-    }
-
-    public function registerSwiftTransport()
-    {
-        $this->app['swift.transport'] = $this->app->share(function ($app) {
-            // Note: This is my own implementation of transport manager as shown below
-            return new TransportManager($app);
-        });
+        $this->app->register(BadMailerProvider::class);
     }
 }
