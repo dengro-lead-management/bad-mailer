@@ -1,13 +1,13 @@
 <?php
 
-namespace DenGroLeadManagement\BadMailer;
+namespace Dengro\Badmailer;
 
 use Illuminate\Foundation\Http\Kernel;
 use Illuminate\Mail\MailServiceProvider;
 use Illuminate\Support\ServiceProvider;
 use Swift_Mailer;
 
-class BadMailerProvider extends MailServiceProvider
+class BadmailerProvider extends MailServiceProvider
 {
     /**
      * Register the Swift Mailer instance.
@@ -32,7 +32,7 @@ class BadMailerProvider extends MailServiceProvider
     {
         $this->app->singleton('swift.mailer', function($app) {
             return new Swift_Mailer(
-                new BadMailerTransport()
+                new BadmailerTransport()
             );
         });
     }

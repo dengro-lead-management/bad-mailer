@@ -1,6 +1,6 @@
 <?php
 
-namespace DenGroLeadManagement\BadMailer;
+namespace Dengro\Badmailer;
 
 use Illuminate\Support\Facades\Session;
 use Swift_Mime_Message;
@@ -10,7 +10,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;
 
-class BadMailerTransport extends Transport {
+class BadmailerTransport extends Transport {
 
     /**
      * {@inheritdoc}

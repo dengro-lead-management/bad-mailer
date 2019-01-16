@@ -1,8 +1,8 @@
 <?php 
 
-namespace DenGroLeadManagement\BadMailer;
+namespace Dengro\Badmailer;
 
-class BadMailerServiceProvider extends \Illuminate\Mail\MailServiceProvider
+class BadmailerServiceProvider extends \Illuminate\Mail\MailServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -22,6 +22,6 @@ class BadMailerServiceProvider extends \Illuminate\Mail\MailServiceProvider
      */
     public function register()
     {
-        $this->app->register(BadMailerProvider::class);
+        $this->app->register(BadmailerProvider::class);
     }
 }

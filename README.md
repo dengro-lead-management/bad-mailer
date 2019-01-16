@@ -7,13 +7,13 @@ Bad Mailer is a transport driver for Laravel's Mailer that always returns an err
 Install using Composer for development:
 
 ```
-composer require --dev dengro-lead-management/bad-mailer
+composer require --dev dengrocrm/bad-mailer
 ```
 
 Optionally for non development environments can remove the `--dev` flag. Next if version is less than 5.5 add to Laravel providers inside `config/app.php`:
 
 ```
-DenGroLeadManagement\BadMailer\BadMailerServiceProvider::class,
+Dengro\Badmailer\BadmailerServiceProvider::class,
 ```
 
 ## Configuration
